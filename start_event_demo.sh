@@ -11,7 +11,7 @@ SIM_PID=$!
 sleep 8
 
 # Launch the Foxglove bridge in the background
-ros2 launch foxglove_bridge foxglove_bridge_launch.xml &
+ros2 launch foxglove_bridge foxglove_bridge_launch.xml 'address:="::"'&
 BRIDGE_PID=$!
 
 echo "Simulator PID: $SIM_PID"
