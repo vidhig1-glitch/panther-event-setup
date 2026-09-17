@@ -104,9 +104,9 @@
       },
       "cameraState": {
         "perspective": true,
-        "distance": 16.29012499999936,
-        "phi": 60.000000000004476,
-        "thetaOffset": 60.000000000006494,
+        "distance": 10.266841665589574,
+        "phi": 60.00000000000483,
+        "thetaOffset": 60.000000000007134,
         "targetOffset": [
           0,
           0,
@@ -194,10 +194,6 @@
       "showLegend": false,
       "foxglovePanelTitle": "/imu/data"
     },
-    "RawMessages!1pm2m5m": {
-      "topicPath": "/controller_manager/activity",
-      "defaultExpanded": false
-    },
     "DiagnosticSummary!128uq1a": {
       "topicToRender": "/diagnostics",
       "minLevel": 0,
@@ -205,6 +201,35 @@
       "hardwareIdFilter": "",
       "sortByLevel": true,
       "secondsUntilStale": 5
+    },
+    "RawMessages!1pm2m5m": {
+      "topicPath": "/controller_manager/activity",
+      "defaultExpanded": false
+    },
+    "Teleop!3rdmrth": {
+      "topic": "/teleop_cmd_vel",
+      "publishRate": 1,
+      "autoSendStopOnRelease": false,
+      "upButton": {
+        "field": "linear-x",
+        "value": 1
+      },
+      "downButton": {
+        "field": "linear-x",
+        "value": -1
+      },
+      "leftButton": {
+        "field": "angular-z",
+        "value": 1
+      },
+      "rightButton": {
+        "field": "angular-z",
+        "value": -1
+      },
+      "stopButton": {
+        "field": "linear-x",
+        "value": 0
+      }
     },
     "Tab!2be8txe": {
       "activeTabIdx": 0,
@@ -242,6 +267,10 @@
             },
             "splitPercentage": 28.57142857142857
           }
+        },
+        {
+          "title": "",
+          "layout": "Teleop!3rdmrth"
         }
       ]
     }
